@@ -1,11 +1,12 @@
 import { createContext, useState } from "react";
 import { Theme } from "./constants";
 import { LeftNavigator } from "./components/LeftNavigator";
+import { ButtonContainer } from "./components/button/ButtonContainer";
 
 export const ThemeContext = createContext();
 
 function App() {
-  const  [theme, setTheme] = useState(Theme.LIGHT);
+  const [theme, setTheme] = useState(Theme.LIGHT);
 
   const css = {
     fontFamily: "JetBrains Mono",
@@ -18,7 +19,9 @@ function App() {
   return (
     <ThemeContext.Provider value={{ theme, setTheme }}>
       <div style={css} className="App">
-        <LeftNavigator>Hello</LeftNavigator>
+        <LeftNavigator>
+          <ButtonContainer/>
+        </LeftNavigator>
       </div>
     </ThemeContext.Provider>
   );
