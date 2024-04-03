@@ -1,24 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+import { createContext, useState } from "react";
+import { Theme } from "./constants";
+import { LeftNavigator } from "./components/LeftNavigator";
+
+export const ThemeContext = createContext();
 
 function App() {
+  const  [theme, setTheme] = useState(Theme.LIGHT);
+
+  const css = {
+    fontFamily: "JetBrains Mono",
+    fontSize: "1em",
+    padding: "0px",
+    margin: "0px",
+    display: "flex",
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <ThemeContext.Provider value={{ theme, setTheme }}>
+      <div style={css} className="App">
+        <LeftNavigator>Hello</LeftNavigator>
+      </div>
+    </ThemeContext.Provider>
   );
 }
 
