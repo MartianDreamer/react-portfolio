@@ -7,10 +7,20 @@ export function ContentContainer({ children, title = "Tab", style }) {
   const { theme } = useContext(ThemeContext);
   const { unfoldTab, setUnfoldTab } = useContext(FoldContext);
 
-  const css = {
+  const containerCss = {
     ...style,
-    backgroundColor: theme.color2,
+    backgroundColor: theme.color3,
     flexGrow: unfoldTab === title ? "1" : "0",
+  };
+
+  const contentCss = {
+    backgroundColor: theme.color2,
+    marginTop: unfoldTab === title ? "10px" : "0px",
+    padding: unfoldTab === title ? "5px" : "0px",
+    // opacity: unfoldTab === title ? 1 : 0,
+    height: unfoldTab === title ? "auto" : "0px",
+    transform: unfoldTab === title ? "scale(1, 1)" : "scale(0, 0)",
+    overflow: "hidden",
   };
 
   const onclick = () => {
@@ -18,9 +28,11 @@ export function ContentContainer({ children, title = "Tab", style }) {
   };
 
   return (
-    <div className="content" style={css} onClick={onclick}>
+    <div className="content-container" style={containerCss} onClick={onclick}>
       <span className="tab-title">{title}</span>
-      {children}
+      <div className="content" style={contentCss}>
+        {children}
+      </div>
     </div>
   );
 }

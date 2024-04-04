@@ -1,4 +1,4 @@
-.content {
+.content-container {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -8,13 +8,19 @@
     cursor: pointer;
 }
 
-.content:hover {
-    box-shadow: 2px 2px;
-    opacity: 0.8;
+.content-container:hover {
+    box-shadow: 3px 3px;
+    opacity: 0.9;
 }
 
 .tab-title {
     font-weight: bold;
     font-size: 1.5em;
-    margin-bottom: 5px;
+}
+
+.content {
+    border-radius: 10px;
+    flex-grow: 1;
+    transition: transform 2s;
+    transform-origin: top left;
 }

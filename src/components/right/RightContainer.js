@@ -18,7 +18,7 @@ export function RightContainer() {
     borderRadius: "10px",
     display: "flex",
     flexDirection: "column",
-    backgroundColor: theme.color3,
+    backgroundColor: theme.color1,
     transition: "background-color 2s",
   };
 
@@ -29,11 +29,35 @@ export function RightContainer() {
           title={experienceTabTitle}
           style={{ margin: "10px 10px 5px 10px" }}
           unfold={true}
-        ></ContentContainer>
+        >
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec velit
+          orci, porttitor non mauris nec, gravida aliquam lectus. In a nisi id
+          eros imperdiet tincidunt. Pellentesque condimentum odio ac aliquam
+          sollicitudin. Sed quis tempus lorem, quis venenatis nibh. Mauris sed
+          vulputate ante. Donec posuere leo odio, in gravida augue laoreet ut.
+          Ut ullamcorper vehicula venenatis. Ut tempor ex ac enim convallis, eu
+          venenatis tortor bibendum. Nulla at rutrum nisi. Nulla ex purus,
+          condimentum et fermentum at, pellentesque ac est. Ut consequat
+          facilisis congue. Cras varius justo sit amet eros dignissim, non
+          blandit eros maximus. Praesent placerat elementum finibus. Fusce
+          facilisis augue eu nunc ullamcorper, ornare tempus ligula rutrum.
+        </ContentContainer>
         <ContentContainer
           title={educationTabTitle}
           style={{ margin: "0px 10px 5px 10px" }}
-        ></ContentContainer>
+        >
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec velit
+          orci, porttitor non mauris nec, gravida aliquam lectus. In a nisi id
+          eros imperdiet tincidunt. Pellentesque condimentum odio ac aliquam
+          sollicitudin. Sed quis tempus lorem, quis venenatis nibh. Mauris sed
+          vulputate ante. Donec posuere leo odio, in gravida augue laoreet ut.
+          Ut ullamcorper vehicula venenatis. Ut tempor ex ac enim convallis, eu
+          venenatis tortor bibendum. Nulla at rutrum nisi. Nulla ex purus,
+          condimentum et fermentum at, pellentesque ac est. Ut consequat
+          facilisis congue. Cras varius justo sit amet eros dignissim, non
+          blandit eros maximus. Praesent placerat elementum finibus. Fusce
+          facilisis augue eu nunc ullamcorper, ornare tempus ligula rutrum.
+        </ContentContainer>
         <ContentContainer
           title={cerfiticationsTabTitle}
           style={{ margin: "0px 10px 5px 10px" }}
