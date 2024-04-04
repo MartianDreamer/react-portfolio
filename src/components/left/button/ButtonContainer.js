@@ -1,16 +1,10 @@
 import { ChangeThemeButton } from "./ChangeThemeButton";
 import { CodeButton } from "./CodeButton";
+import "./button.css"
 
 export function ButtonContainer({ children }) {
-  const css = {
-    display: "flex",
-    justifyContent: "end",
-    marginTop: "20px",
-    paddingRight: "20px",
-  };
-
   return (
-    <div style={css}>
+    <div className="button-container">
       <CodeButton></CodeButton>
       <ChangeThemeButton></ChangeThemeButton>
       {children}

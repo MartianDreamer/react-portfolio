@@ -1,7 +1,7 @@
 import { createContext, useState } from "react";
+import { LeftNavigator } from "./components/left/LeftNavigator";
+import { RightContainer } from "./components/right/RightContainer";
 import { Theme } from "./constants";
-import { LeftNavigator } from "./components/LeftNavigator";
-import { ButtonContainer } from "./components/button/ButtonContainer";
 
 export const ThemeContext = createContext();
 
@@ -14,14 +14,15 @@ function App() {
     padding: "0px",
     margin: "0px",
     display: "flex",
+    color: theme.textColor,
+    transition: "color 2s",
   };
 
   return (
     <ThemeContext.Provider value={{ theme, setTheme }}>
       <div style={css} className="App">
-        <LeftNavigator>
-          <ButtonContainer/>
-        </LeftNavigator>
+        <LeftNavigator />
+        <RightContainer />
       </div>
     </ThemeContext.Provider>
   );

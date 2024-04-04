@@ -1,0 +1,52 @@
+#contact-box {
+    user-select: none;
+    margin: 10px;
+    padding-top: 10px !important;
+    padding-bottom: 15px !important;
+    width: 310px;
+    font-size: 15px;
+    padding: 5px;
+    border-radius: 20px;
+    transition: background-color 2s;
+}
+
+.contact-info {
+    margin-bottom: 10px;
+    margin-top: 0px;
+    font-size: 0.935em;
+}
+
+.contact-info>a {
+    text-decoration: none;
+    color: inherit
+}
+
+#avatar-frame {
+    width: 280px;
+    height: 280px;
+    border-radius: 280px;
+    content-visibility: auto;
+    padding: 0px;
+    margin: 0px;
+    position: relative;
+    left: 15px;
+    margin-bottom: 20px;
+}
+
+#my-name {
+    font-size: 2em;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.left-section {
+    font-size: 1.5em;
+    text-align: left;
+    margin-bottom: 5px;
+    margin-top: 15px;
+}
+
+.left-content {
+    text-align: justify;
+    font-size: 1em;
+}

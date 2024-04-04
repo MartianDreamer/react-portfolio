@@ -1,7 +1,7 @@
 import { useContext, useState } from "react";
-import { ThemeContext } from "../../App";
-import { Theme } from "../../constants";
-import { button } from "./css";
+import { ThemeContext } from "../../../App";
+import { Theme } from "../../../constants";
+import "./button.css"
 
 export function ChangeThemeButton() {
   const { theme, setTheme } = useContext(ThemeContext);
@@ -9,7 +9,6 @@ export function ChangeThemeButton() {
   const [icon, setIcon] = useState(theme.themeIcon);
 
   const css = {
-    ...button,
     color: Theme.switch(theme).textColor,
     backgroundColor: theme.buttonColor,
   };
@@ -21,7 +20,7 @@ export function ChangeThemeButton() {
   };
 
   return (
-    <div className="nf" style={css} onClick={changeTheme}>
+    <div className="nf button" style={css} onClick={changeTheme}>
       {icon}
     </div>
   );

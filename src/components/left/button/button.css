@@ -1,0 +1,16 @@
+.button {
+    height: fit-content;
+    width: fit-content;
+    cursor: pointer;
+    font-size: 2em;
+    padding: 5px;
+    border-radius: 20px;
+    transition: background-color 2s, color 2s
+}
+
+.button-container {
+    display: flex;
+    justify-content: end;
+    margin-top: 20px;
+    padding-right: 20px
+}

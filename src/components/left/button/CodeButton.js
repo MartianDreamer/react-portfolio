@@ -1,7 +1,7 @@
 import { useContext } from "react";
-import { Theme } from "../../constants";
-import { button } from "./css";
-import { ThemeContext } from "../../App";
+import { ThemeContext } from "../../../App";
+import { Theme } from "../../../constants";
+import "./button.css"
 
 export function CodeButton() {
   const icon = "\ue796";
@@ -9,7 +9,6 @@ export function CodeButton() {
   const { theme } = useContext(ThemeContext);
 
   const css = {
-    ...button,
     color: Theme.switch(theme).textColor,
     backgroundColor: theme.buttonColor,
     textDecoration: "none",
@@ -18,7 +17,7 @@ export function CodeButton() {
 
   return (
     <a
-      className="nf"
+      className="nf button"
       href="https://github.com/MartianDreamer/react-portfolio"
       style={css}
     >

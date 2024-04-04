@@ -9,8 +9,8 @@ export const Theme = {
   },
   DARK: {
     color1: "#0E0113",
-    color2: "#252336",
-    color3: "#454266",
+    color2: "#454266",
+    color3: "#252336",
     textColor: "#E6EFFF",
     themeIcon: "\uf186",
     buttonColor: "#E6EFFF",

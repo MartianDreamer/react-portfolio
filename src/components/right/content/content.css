@@ -1,0 +1,20 @@
+.content {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    transition: flex-grow 1.5s, opacity 0.5s, box-shadow 0.5s;
+    padding: 10px !important;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.content:hover {
+    box-shadow: 2px 2px;
+    opacity: 0.8;
+}
+
+.tab-title {
+    font-weight: bold;
+    font-size: 1.5em;
+    margin-bottom: 5px;
+}
