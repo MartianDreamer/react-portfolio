@@ -1,7 +1,7 @@
-import { useContext, useState } from "react";
+import { useContext } from "react";
 import { ThemeContext } from "../../../App";
-import "./content.css";
 import { FoldContext } from "../RightContainer";
+import "./content.css";
 
 export function ContentContainer({ children, title = "Tab", style }) {
   const { theme } = useContext(ThemeContext);

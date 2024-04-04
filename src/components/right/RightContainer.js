@@ -8,6 +8,8 @@ export function RightContainer() {
   const { theme } = useContext(ThemeContext);
   const experienceTabTitle = "Experience";
   const educationTabTitle = "Education";
+  const cerfiticationsTabTitle = "Certifications";
+  const othersTabTitle = "Others";
   const [unfoldTab, setUnfoldTab] = useState(experienceTabTitle);
   const css = {
     minHeight: "100vh",
@@ -30,6 +32,14 @@ export function RightContainer() {
         ></ContentContainer>
         <ContentContainer
           title={educationTabTitle}
+          style={{ margin: "0px 10px 5px 10px" }}
+        ></ContentContainer>
+        <ContentContainer
+          title={cerfiticationsTabTitle}
+          style={{ margin: "0px 10px 5px 10px" }}
+        ></ContentContainer>
+        <ContentContainer
+          title={othersTabTitle}
           style={{ margin: "0px 10px 5px 10px" }}
         ></ContentContainer>
       </FoldContext.Provider>
