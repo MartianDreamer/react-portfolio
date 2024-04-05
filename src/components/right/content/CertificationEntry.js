@@ -1,12 +1,13 @@
-import { useContext } from "react";
 import { ThemeContext } from "../../../App";
-import "./entry.css"
+import { useContext } from "react";
+import "./entry.css";
 
-export default function ExperienceEntry({ data }) {
+export function CertificationEntry({ data }) {
   const { theme } = useContext(ThemeContext);
 
   const entryCss = {
     border: `solid ${theme.color1} 3px`,
+    width: "fit-content",
   };
 
   return (
@@ -17,12 +18,12 @@ export default function ExperienceEntry({ data }) {
           alt=""
           style={{ marginRight: "10px", width: "30px" }}
         />
-        {data.company} - {data.position}
+        {data.name}
+        {data.org && ` - ${data.org}`}
       </p>
-      <p>
-        {data.from} - {data.to}
-      </p>
-      <p>{data.description}</p>
+      {data.issuedAt && <p>Issued at {data.issuedAt}</p>}
+      {data.credentialId && <p>Credential ID {data.credentialId}</p>}
+      {data.link && <p>Certificate <a className="link" href={data.link}>{data.link}</a></p>}
     </div>
   );
 }

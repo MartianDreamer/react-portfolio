@@ -1,16 +1,17 @@
 import { createContext, useContext, useState } from "react";
 import { ThemeContext } from "../../App";
 import { ContentContainer } from "./content/ContentContainer";
-import { experience } from "../../resume";
+import { certifications, education, experience } from "../../resume";
 import ExperienceEntry from "./content/ExperienceEntry";
+import { EducationEntry } from "./content/EducationEntry";
+import { CertificationEntry } from "./content/CertificationEntry";
 
 export const FoldContext = createContext();
 
 export function RightContainer() {
   const { theme } = useContext(ThemeContext);
   const experienceTabTitle = "Experience";
-  const educationTabTitle = "Education";
-  const cerfiticationsTabTitle = "Certifications";
+  const educationTabTitle = "Education & Certifications";
   const othersTabTitle = "Others";
   const [unfoldTab, setUnfoldTab] = useState(experienceTabTitle);
   const css = {
@@ -30,7 +31,11 @@ export function RightContainer() {
         <ContentContainer
           title={experienceTabTitle}
           containerStyle={{ margin: "10px 10px 5px 10px" }}
-          contentStyle={{ display: "grid", gridTemplateColumns: "50% 50%", gridTemplateRows: "fit-content(100%)" }}
+          contentStyle={{
+            display: "grid",
+            gridTemplateColumns: "50% 50%",
+            gridTemplateRows: "fit-content(100%)",
+          }}
           unfold={true}
         >
           {experience.map((e, i) => (
@@ -41,11 +46,17 @@ export function RightContainer() {
           title={educationTabTitle}
           containerStyle={{ margin: "0px 10px 5px 10px" }}
         >
+          <div style={{ display: "flex", margin: "5px" }}>
+            {education.map((e, i) => (
+              <EducationEntry key={i} data={e}></EducationEntry>
+            ))}
+          </div>
+          <div style={{ display: "flex", margin: "5px" }}>
+            {certifications.map((e, i) => (
+              <CertificationEntry key={i} data={e}></CertificationEntry>
+            ))}
+          </div>
         </ContentContainer>
-        <ContentContainer
-          title={cerfiticationsTabTitle}
-          containerStyle={{ margin: "0px 10px 5px 10px" }}
-        ></ContentContainer>
         <ContentContainer
           title={othersTabTitle}
           containerStyle={{ margin: "0px 10px 5px 10px" }}
