@@ -33,8 +33,8 @@ export function RightContainer() {
           contentStyle={{ display: "grid", gridTemplateColumns: "50% 50%" }}
           unfold={true}
         >
-          {experience.map((e) => (
-            <ExperienceEntry data={e}></ExperienceEntry>
+          {experience.map((e, i) => (
+            <ExperienceEntry key={i} data={e}></ExperienceEntry>
           ))}
         </ContentContainer>
         <ContentContainer
