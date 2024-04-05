@@ -64,49 +64,49 @@ Working with Die Mobiliar:
 ];
 
 export const education = [
-    {
-        school: "University of Information Technology",
-        logo: "/assets/uit_logo.jfif",
-        major: "Information Technology",
-        degree: "Bachelor's degree",
-        from: "2021",
-        to: "2024"
-    },
-    {
-        school: "University Of Economics Ho Chi Minh City",
-        logo: "/assets/universityofeconomicshcmcity_logo.jfif",
-        major: "Business Administration and Management, General",
-        degree: "Bachelor's degree",
-        from: "2015",
-        to: "2019"
-    }
-]
+  {
+    school: "University of Information Technology",
+    logo: "/assets/uit_logo.jfif",
+    major: "Information Technology",
+    degree: "Bachelor's degree",
+    from: "2021",
+    to: "2024",
+  },
+  {
+    school: "University Of Economics Ho Chi Minh City",
+    logo: "/assets/universityofeconomicshcmcity_logo.jfif",
+    major: "Business Administration and Management, General",
+    degree: "Bachelor's degree",
+    from: "2015",
+    to: "2019",
+  },
+];
 
 export const certifications = [
-    {
-        name: "Build a Modern Computer from First Principles: From Nand to Tetris (Project-Centered Course)",
-        org: "Coursera",
-        logo: "/assets/coursera_logo.jfif",
-        issuedAt: "Oct 2022",
-        credentialId: "5ECDKHJ7EV4R"
-    },
-    {
-        name: "Divide and Conquer, Sorting and Searching, and Randomized Algorithms",
-        org: "Coursera",
-        logo: "/assets/coursera_logo.jfif",
-        issuedAt: "Aug 2021",
-        credentialId: "X9RJXD2WER77"
-    },
-    {
-        name: "Python for Everybody Specialization",
-        org: "Coursera",
-        logo: "/assets/coursera_logo.jfif",
-        issuedAt: "Nov 2020",
-        credentialId: "DHSYHJ8WEAPA"
-    },
-    {
-        name: "CS50’s Introduction to Computer Science - CS50x",
-        logo: "/assets/cs50x_logo.jfif",
-        link: "https://certificates.cs50.io/fddb4b17-c5ae-4c52-ac9d-d9bfccda1024"
-    }
-]
+  {
+    name: "Build a Modern Computer from First Principles: From Nand to Tetris (Project-Centered Course)",
+    org: "Coursera",
+    logo: "/assets/coursera_logo.jfif",
+    issuedAt: "Oct 2022",
+    credentialId: "5ECDKHJ7EV4R",
+  },
+  {
+    name: "Divide and Conquer, Sorting and Searching, and Randomized Algorithms",
+    org: "Coursera",
+    logo: "/assets/coursera_logo.jfif",
+    issuedAt: "Aug 2021",
+    credentialId: "X9RJXD2WER77",
+  },
+  {
+    name: "Python for Everybody Specialization",
+    org: "Coursera",
+    logo: "/assets/coursera_logo.jfif",
+    issuedAt: "Nov 2020",
+    credentialId: "DHSYHJ8WEAPA",
+  },
+  {
+    name: "CS50’s Introduction to Computer Science - CS50x",
+    logo: "/assets/cs50x_logo.jfif",
+    image: "/assets/cs50x_certificate.jpg",
+  },
+];

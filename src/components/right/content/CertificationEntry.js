@@ -1,5 +1,5 @@
 import { ThemeContext } from "../../../App";
-import { useContext } from "react";
+import { Fragment, useContext } from "react";
 import "./entry.css";
 
 export function CertificationEntry({ data }) {
@@ -23,7 +23,13 @@ export function CertificationEntry({ data }) {
       </p>
       {data.issuedAt && <p>Issued at {data.issuedAt}</p>}
       {data.credentialId && <p>Credential ID {data.credentialId}</p>}
-      {data.link && <p>Certificate <a className="link" href={data.link}>{data.link}</a></p>}
+      {data.image && (
+          <img
+            style={{ width: "500px" }}
+            src={process.env.PUBLIC_URL + data.image}
+            alt=""
+          ></img>
+      )}
     </div>
   );
 }
