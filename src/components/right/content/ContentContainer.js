@@ -23,7 +23,6 @@ export function ContentContainer({
     backgroundColor: theme.color2,
     marginTop: unfoldTab === title ? "10px" : "0px",
     padding: unfoldTab === title ? "5px" : "0px",
-    height: unfoldTab === title ? "auto" : "0px",
     transform: unfoldTab === title ? "scale(1, 1)" : "scale(0, 0)",
   };
 
