@@ -11,3 +11,24 @@ export const personalInformation = {
   skills:
     "Java • Data Structures • Algorithm • Spring Framework • Terraform • Git • Microsoft Azure • Jakarta EE • Microsoft SQL Server • Apache Kafka",
 };
+
+export const experience = [
+  {
+    company: "Axon Active",
+    logo: "assets/axon_active_logo.jfif",
+    position: "Software Engineer",
+    from: "Dec 2022",
+    to: "Present",
+    description: `
+        Working in a BPMN application project for Igrafx:
+- Working with Java and MS SQL Server at back end.
+- Maintain front-end code with JS and Tailwind.
+Working with Die Mobiliar:
+- Backend with JavaEE, Kafka, Oracle Database, AKS and SQL Server.
+- Write Kafka consumers to consume from data streams.
+- Implementing a partner information lookup service.
+- Implementing services to decide which agent would support a partner.
+- Working with Angular to create user interface on web.
+        `,
+  },
+];
