@@ -17,10 +17,8 @@ export function ContentContainer({ children, title = "Tab", style }) {
     backgroundColor: theme.color2,
     marginTop: unfoldTab === title ? "10px" : "0px",
     padding: unfoldTab === title ? "5px" : "0px",
-    // opacity: unfoldTab === title ? 1 : 0,
     height: unfoldTab === title ? "auto" : "0px",
     transform: unfoldTab === title ? "scale(1, 1)" : "scale(0, 0)",
-    overflow: "hidden",
   };
 
   const onclick = () => {

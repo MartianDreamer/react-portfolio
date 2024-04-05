@@ -21,6 +21,7 @@
 .content {
     border-radius: 10px;
     flex-grow: 1;
-    transition: transform 2s;
+    transition: transform 2s, background-color 2s;
     transform-origin: top left;
+    overflow: hidden;
 }
