@@ -1,6 +1,6 @@
 import { useContext } from "react";
 import { ThemeContext } from "../../../App";
-import { Theme } from "../../../constants";
+import { Theme } from "../../../theme";
 import "./button.css"
 
 export function CodeButton() {

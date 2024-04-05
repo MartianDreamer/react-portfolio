@@ -1,0 +1,19 @@
+.experience-entry {
+    padding: 10px;
+    height: fit-content;
+    border-radius: 10px;
+    margin: 5px;
+    transition: border 2s;
+}
+
+.experience-entry-title {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.experience-entry>p {
+    margin-top: 0px;
+    margin-bottom: 5px;
+    text-align: justify;
+    white-space: pre-line;
+}

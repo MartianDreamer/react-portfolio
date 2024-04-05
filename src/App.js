@@ -1,12 +1,12 @@
 import { createContext, useState } from "react";
 import { LeftNavigator } from "./components/left/LeftNavigator";
 import { RightContainer } from "./components/right/RightContainer";
-import { Theme } from "./constants";
+import { Theme } from "./theme";
 
 export const ThemeContext = createContext();
 
 function App() {
-  const [theme, setTheme] = useState(Theme.LIGHT);
+  const [theme, setTheme] = useState(Theme.DARK);
 
   const css = {
     fontFamily: "JetBrains Mono",

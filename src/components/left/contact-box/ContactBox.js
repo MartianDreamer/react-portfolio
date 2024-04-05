@@ -1,7 +1,7 @@
 import { useContext } from "react";
 import "./contact-box.css";
 import { ThemeContext } from "../../../App";
-import { personalInformation } from "../../../data";
+import { personalInformation } from "../../../resume";
 
 export function ContactBox() {
   const { theme } = useContext(ThemeContext);
