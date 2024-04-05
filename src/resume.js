@@ -83,30 +83,35 @@ export const education = [
 ];
 
 export const certifications = [
-  {
-    name: "Build a Modern Computer from First Principles: From Nand to Tetris (Project-Centered Course)",
-    org: "Coursera",
-    logo: "/assets/coursera_logo.jfif",
-    issuedAt: "Oct 2022",
-    credentialId: "5ECDKHJ7EV4R",
-  },
-  {
-    name: "Divide and Conquer, Sorting and Searching, and Randomized Algorithms",
-    org: "Coursera",
-    logo: "/assets/coursera_logo.jfif",
-    issuedAt: "Aug 2021",
-    credentialId: "X9RJXD2WER77",
-  },
-  {
-    name: "Python for Everybody Specialization",
-    org: "Coursera",
-    logo: "/assets/coursera_logo.jfif",
-    issuedAt: "Nov 2020",
-    credentialId: "DHSYHJ8WEAPA",
-  },
-  {
-    name: "CS50’s Introduction to Computer Science - CS50x",
-    logo: "/assets/cs50x_logo.jfif",
-    image: "/assets/cs50x_certificate.jpg",
-  },
+  [
+    //array = row
+    {
+      name: "Build a Modern Computer from First Principles: From Nand to Tetris (Project-Centered Course)",
+      org: "Coursera",
+      logo: "/assets/coursera_logo.jfif",
+      issuedAt: "Oct 2022",
+      credentialId: "5ECDKHJ7EV4R",
+    },
+    {
+      name: "Divide and Conquer, Sorting and Searching, and Randomized Algorithms",
+      org: "Coursera",
+      logo: "/assets/coursera_logo.jfif",
+      issuedAt: "Aug 2021",
+      credentialId: "X9RJXD2WER77",
+    },
+    {
+      name: "Python for Everybody Specialization",
+      org: "Coursera",
+      logo: "/assets/coursera_logo.jfif",
+      issuedAt: "Nov 2020",
+      credentialId: "DHSYHJ8WEAPA",
+    },
+  ],
+  [
+    {
+      name: "CS50’s Introduction to Computer Science - CS50x",
+      logo: "/assets/cs50x_logo.jfif",
+      image: "/assets/cs50x_certificate.jpg",
+    },
+  ],
 ];

@@ -51,11 +51,13 @@ export function RightContainer() {
               <EducationEntry key={i} data={e}></EducationEntry>
             ))}
           </div>
-          <div style={{ display: "flex", margin: "5px" }}>
-            {certifications.map((e, i) => (
-              <CertificationEntry key={i} data={e}></CertificationEntry>
-            ))}
-          </div>
+          {certifications.map((e) => (
+            <div style={{ display: "flex", margin: "5px" }}>
+              {e.map((el, i) => (
+                <CertificationEntry key={i} data={el}></CertificationEntry>
+              ))}
+            </div>
+          ))}
         </ContentContainer>
         <ContentContainer
           title={othersTabTitle}
