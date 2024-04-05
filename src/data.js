@@ -1,5 +1,6 @@
 export const personalInformation = {
-  myName: "Sang Xuan Nguyen",
+  name: "Sang Xuan Nguyen",
+  picture: "assets/me.jpg",
   phone: "+84985470552",
   mail: "nguyenxuansang9494@gmail.com",
   skype: "live:.cid.87083f88f9300889",

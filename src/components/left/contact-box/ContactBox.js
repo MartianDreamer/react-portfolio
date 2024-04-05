@@ -20,8 +20,8 @@ export function ContactBox() {
 
   return (
     <div id="contact-box" style={css}>
-      <div id="avatar-frame">
-        <img src="assets/avatar.jpg" alt="" style={{ width: "280px" }} />
+      <div id="picture-frame">
+        <img src="assets/me.jpg" alt="" style={{ width: "280px" }} />
       </div>
       <div id="my-name">{personalInformation.myName}</div>
       <p className="contact-info">
