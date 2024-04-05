@@ -1,5 +1,5 @@
+import { useContext } from "react";
 import { ThemeContext } from "../../../App";
-import { Fragment, useContext } from "react";
 import "./entry.css";
 
 export function CertificationEntry({ data }) {
