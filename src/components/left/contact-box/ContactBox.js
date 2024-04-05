@@ -21,7 +21,7 @@ export function ContactBox() {
   return (
     <div id="contact-box" style={css}>
       <div id="picture-frame">
-        <img src={personalInformation.picture} alt="" style={{ width: "280px" }} />
+        <img src={process.env.PUBLIC_URL + personalInformation.picture} alt="" style={{ width: "280px" }} />
       </div>
       <div id="my-name">{personalInformation.name}</div>
       <p className="contact-info">

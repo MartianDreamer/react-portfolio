@@ -1,6 +1,6 @@
 export const personalInformation = {
   name: "Sang Xuan Nguyen",
-  picture: "assets/me.jpg",
+  picture: "/assets/me.jpg",
   phone: "+84985470552",
   mail: "nguyenxuansang9494@gmail.com",
   skype: "live:.cid.87083f88f9300889",
@@ -15,7 +15,7 @@ export const personalInformation = {
 export const experience = [
   {
     company: "Axon Active",
-    logo: "assets/axon_active_logo.jfif",
+    logo: "/assets/axon_active_logo.jfif",
     position: "Software Engineer",
     from: "Dec 2022",
     to: "Present",
