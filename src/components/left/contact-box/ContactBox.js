@@ -1,6 +1,7 @@
 import { useContext } from "react";
 import "./contact-box.css";
 import { ThemeContext } from "../../../App";
+import { personalInformation } from "../../../data";
 
 export function ContactBox() {
   const { theme } = useContext(ThemeContext);
@@ -22,39 +23,32 @@ export function ContactBox() {
       <div id="avatar-frame">
         <img src="assets/avatar.jpg" alt="" style={{ width: "280px" }} />
       </div>
-      <div id="my-name">Sang Xuan Nguyen</div>
+      <div id="my-name">{personalInformation.myName}</div>
       <p className="contact-info">
-        <span className="nf">{icons.mail}</span> nguyenxuansang9494@gmail.com
+        <span className="nf">{icons.mail}</span> {personalInformation.mail}
       </p>
       <p className="contact-info">
-        <span className="nf">{icons.phone}</span> +84985470552
+        <span className="nf">{icons.phone}</span> {personalInformation.phone}
       </p>
       <p className="contact-info">
-        <span className="nf">{icons.skype}</span> live:.cid.87083f88f9300889
+        <span className="nf">{icons.skype}</span> {personalInformation.skype}
       </p>
       <p className="contact-info">
         <a href="https://www.linkedin.com/in/nguyenxuansang9494">
           <span className="nf">{icons.linkedin}</span>{" "}
-          linkedin.com/in/nguyenxuansang9494
+          {personalInformation.linkedin}
         </a>
       </p>
       <p className="contact-info">
         <a href="https://github.com/martiandreamer">
-          <span className="nf">{icons.github}</span> github.com/martiandreamer
+          <span className="nf">{icons.github}</span>{" "}
+          {personalInformation.github}
         </a>
       </p>
       <div className="left-section">Summary</div>
-      <div className="left-content">
-        I have three years of experience with Java and good knowledge of Spring
-        Framework, Jakarta EE, Kafka, Git, Docker, Terraform and Azure. I am
-        confident, ambitious and willing to learn new thing and to face new
-        challenges.
-      </div>
+      <div className="left-content">{personalInformation.sumary}</div>
       <div className="left-section">Skills</div>
-      <div className="left-content">
-        Java • Data Structures • Algorithm • Spring Framework • Terraform • Git
-        • Microsoft Azure • Jakarta EE • Microsoft SQL Server • Apache Kafka
-      </div>
+      <div className="left-content">{personalInformation.skills}</div>
     </div>
   );
 }
