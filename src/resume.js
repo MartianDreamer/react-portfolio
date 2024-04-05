@@ -109,7 +109,7 @@ export const certifications = [
   ],
   [
     {
-      name: "CS50’s Introduction to Computer Science - CS50x",
+      name: "CS50x Introduction to Computer Science",
       logo: "/assets/cs50x_logo.jfif",
       image: "/assets/cs50x_certificate.jpg",
     },

@@ -24,11 +24,13 @@ export function CertificationEntry({ data }) {
       {data.issuedAt && <p>Issued at {data.issuedAt}</p>}
       {data.credentialId && <p>Credential ID {data.credentialId}</p>}
       {data.image && (
+        <div style={{justifyContent: "center", display: "flex"}}>
           <img
-            style={{ width: "500px" }}
+            style={{ width: "350px" }}
             src={process.env.PUBLIC_URL + data.image}
             alt=""
           ></img>
+        </div>
       )}
     </div>
   );
